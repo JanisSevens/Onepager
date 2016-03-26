@@ -8,7 +8,7 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Domine:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-
+	<link href='https://fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -82,7 +82,7 @@
     </header> 
 
 	<section id="menu" class="menu-section">
-		<div class="container-fluid content-box">
+		<div class="container-fluid section-box">
 		
 		<div class="col-sm-12">
 		<div class="col-sm-4 col-md-3">
@@ -104,7 +104,9 @@
                 <p>Bord met groententapenade, mozzarella, gegrilde groenten volgens aanbod geserveerd met broodmandje</p></li>
 
                 </ul>
-                <img src="img/molen.png" class="img-responsive" style="width: 400px; height: auto;">
+                <img src="img/molen_bleu.png" class="img-responsive visible-xs visible-md visible-lg" style="width: 100%; height: auto;">
+                <img src="img/coffee-plant.png" class="img-responsive visible-sm" style="width: 100%; height: auto;">
+
                 </div>
 		<div class="col-sm-4 col-md-6">
 			<ul class="visible-xs visible-sm">		          
@@ -145,7 +147,35 @@
 
  
             </ul>	
-			<h3 class="center visible-md visible-lg">Welkom bij The Magic Bean! Een koffiebar met Italiaanse koffierecepten en met elke dag vers brood en koeken van de biobakkerij de Trog. Verder serveren wij homemade cakes, taarten en gezonder sandwiches, een uitgebreide keuze thee, verse fruitsapjes, smoothies en bio limonades.</h3>
+			<h3 class="visible-md visible-lg center underline">Welkom bij The Magic Bean! Een koffiebar met Italiaanse koffierecepten en met elke dag vers brood en koeken van de biobakkerij de Trog. Verder serveren wij homemade cakes, taarten en gezonder sandwiches, een uitgebreide keuze thee, verse fruitsapjes, smoothies en bio limonades.</h3>
+
+			<!--
+
+			<div class="flip visible-md visible-lg">
+  				<div class="card">
+    			<div class="face front center ">
+    			<h3>Welkom bij The Magic Bean! Een koffiebar met Italiaanse koffierecepten en met elke dag vers brood en koeken van de biobakkerij de Trog. Verder serveren wij homemade cakes, taarten en gezonder sandwiches, een uitgebreide keuze thee, verse fruitsapjes, smoothies en bio limonades.</h3></div>
+  			</div>
+  			<div class="face back center">
+    			<h3>back</h3>
+  			</div>
+  			</div>
+			</div>
+			<div class="flip col-sm-12"> 
+  			<div class="card"> 
+    		<div class="face front">
+    		<h3>Welkom bij The Magic Bean! Een koffiebar met Italiaanse koffierecepten en met elke dag vers brood en koeken van de biobakkerij de Trog. Verder serveren wij homemade cakes, taarten en gezonder sandwiches, een uitgebreide keuze thee, verse fruitsapjes, smoothies en bio limonades.</h3>
+    		</div> 
+    		<div class="face back">
+    		<img src="img/molen_bleu.png" class="img-responsive" style="width: auto; height: 200px;">
+    			
+    		</div> 
+  			</div> 
+			</div> 
+			-->
+
+
+			
 			<h4 class="center visible-md visible-lg underline">Koffie</h4>
 			<div class="col-sm-6 visible-md visible-lg">
 			
@@ -224,10 +254,17 @@
 
 	</section>
 
+
+
 		<section id="contact" class="contact-section">
 		<div class="container-fluid">
 
 		<div class="col-sm-12">
+		<div class="col-sm-6 visible-md visible-lg">
+		</div>
+		<div class="col-sm-6 visible-md visible-lg">
+		</div>
+		<div></div>
 
 		</div>
 		</div>	
@@ -254,6 +291,14 @@
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
+    </script>
+
+    <script type="text/javascript">
+    	
+  $(".flip").hover(function(){
+  $(this).find(".card").toggleClass("flipped");
+  return false;
+}	);
     </script>
 
 
