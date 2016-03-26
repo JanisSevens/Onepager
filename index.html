@@ -1,29 +1,261 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Menu</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet"  href="fonts.css">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Domine:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
+<!--	Navigatie	-->
 
-	<header>
-		<div class="menu_bar">
-			<a href="#" class="bt-menu"><span class="icon-menu"></span>Menu</a>
-		</div>
-		<nav>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+
+
+  			<div class="top-nav visible-md visible-lg">
+			<div class="col-sm-3">
+			<h6>Hippoliet Lippensplein 72</h6>
+			<h6>Tel:  0032 09 12 34 56</h6>
+
+			</div>
+			<div class="col-sm-6 center"><img src="img/logo_TheMagicBean_CMYK_Cream.svg" style="height: 100%; width: auto; margin: auto;"></div>
+			<div class="col-sm-3 right">
+			<h6>open ma-vr 8:00 tot 18:00</h6>
+			<h6>za-zo 9:30 tot 18:00</h6>
+			</div>
+			</div>
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand visible-xs visible-sm" href="#"><img class="img-responsive" src="img/logo_TheMagicBean_CMYK_Cream.svg" style="height:auto; width: 50px;  margin: auto;"></a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="menu-item"><a href="#home">Home</a></li>
+          <li class="menu-item"><a href="#menu">Menu</a></li>
+          <li class="menu-item"><a href="#contact">Contact</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>  
+
+     <header>
+        <!-- Indicators -->
+        
+        <div id="myCarousel" class="carousel slide hidden-xs">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/barista_01.jpg');"></div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/barista_02.jpg');"></div>
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+        <!-- Controls -->
+
+
+    </header> 
+
+	<section id="menu" class="menu-section">
+		<div class="container-fluid content-box">
+		
+		<div class="col-sm-12">
+		<div class="col-sm-4 col-md-3">
+		            <ul>
+                
+                <h4>Lunch</h4>
+                <h6 class="underline">Tot 16:00</h6>
+                <li><strong>Dagsoep met brood</strong></li>
+                <li><strong>Croque uit het vuistje</strong></li>
+                <li><strong>Croque monsieur</strong>
+                <p>Ham & kaas, 2 st met sla</p></li>
+                <li><strong>Croque italia</strong>
+                <p>Mozzarella, pesto & verse tomaat, 2 st met sla</p></li>
+                <li><strong>Croque brie</strong>
+                <p>Met appel en honing, 2 st met sla</p></li>
+                <li><strong>Quiche van de dag met sla</strong></li>
+                <li><strong>Salade van de dag met brood</strong></li>
+                <li><strong>Tapasbord</strong>
+                <p>Bord met groententapenade, mozzarella, gegrilde groenten volgens aanbod geserveerd met broodmandje</p></li>
+
+                </ul>
+                <img src="img/molen.png" class="img-responsive" style="width: 400px; height: auto;">
+                </div>
+		<div class="col-sm-4 col-md-6">
+			<ul class="visible-xs visible-sm">		          
+                <h4>Koffie</h4>
+                <li><strong>Ristretto</strong>
+                <p>Kleine extra sterke koffie</p></li>
+                <li><strong>Espresso</strong>
+                <p>Sterke Italiaanse Koffie</p></li>
+                <li><strong>Lungo</strong>
+                <p>Grote Koffie</p></li>
+                <li><strong>Espresso Macchiato</strong>
+                <p>Espresso met een wolkje melkschuim</p></li>
+                <li><strong>Cappuccino</strong>
+                <p>Espresso met gestoomde melk & melkschuim</p></li>
+                <li><strong>Vienna</strong>
+                <p>Koffie met slagroom</p></li>
+                <li><strong>Latte</strong>
+                <p>'Lait Russe' of koffie verkeerd</p></li>
+                <li><strong>Dubbele Espresso</strong></li>
+                <li><strong>Kannetje Koffie</strong>
+                <p>Keuze uit de huiskoffie of een orgine-koffie volgens aanbod</p></li>
+                <li><strong>Honey Cappuccino</strong>
+                <p>Cappucino met honing</p></li>
+                <li><strong>Caramel Macchiato</strong>
+                <p>Latte met melkschuim & een vleugje caramel</p></li>
+                <li><strong>Vanilla Macchiato</strong>
+                <p>Latte met melkschuim & een vleugje vanille</p></li>
+                <li><strong>Cookie Macchiato</strong>
+                <p>Latte met melkschuim & een heerlijke toets speculoos.</p></li>
+                <li><strong>Nutty Macchiato</strong>
+                <p>Latte met melkschuim & een heerlijke toets geroosterde hazelnoot.</p></li>
+                <li><strong>Mocha</strong>
+                <p>Latte met toets chocolade.</p></li>
+                <li><strong>Soya Cappuccino / Soya Latte</strong>
+                <p>Bereid met Bio Sojamelk.</p></li>
+                <li><strong>Skinny Cappuccino / Skinny Latte</strong>
+                <p>Bereid met halfvolle biomelk.</p></li>
+
+ 
+            </ul>	
+			<h3 class="center visible-md visible-lg">Welkom bij The Magic Bean! Een koffiebar met Italiaanse koffierecepten en met elke dag vers brood en koeken van de biobakkerij de Trog. Verder serveren wij homemade cakes, taarten en gezonder sandwiches, een uitgebreide keuze thee, verse fruitsapjes, smoothies en bio limonades.</h3>
+			<h4 class="center visible-md visible-lg underline">Koffie</h4>
+			<div class="col-sm-6 visible-md visible-lg">
+			
+			<ul>	
+			<li><strong>Ristretto</strong>
+                <p>Kleine extra sterke koffie</p></li>
+                <li><strong>Espresso</strong>
+                <p>Sterke Italiaanse Koffie</p></li>
+                <li><strong>Lungo</strong>
+                <p>Grote Koffie</p></li>
+                <li><strong>Espresso Macchiato</strong>
+                <p>Espresso met een wolkje melkschuim</p></li>
+                <li><strong>Cappuccino</strong>
+                <p>Espresso met gestoomde melk & melkschuim</p></li>
+                <li><strong>Vienna</strong>
+                <p>Koffie met slagroom</p></li>
+                <li><strong>Latte</strong>
+                <p>'Lait Russe' of koffie verkeerd</p></li>
+                <li><strong>Dubbele Espresso</strong></li>
+                <li><strong>Kannetje Koffie</strong>
+                <p>Keuze uit de huiskoffie of een orgine-koffie volgens aanbod</p></li>
+            </ul>
+
+
+			</div>
+			<div class="col-sm-6 visible-md visible-lg">
 			<ul>
-				<li><a href="#"><span class="icon-home3"></span>Home</a></li>
-				<li><a href="#"><span class="icon-briefcase"></span>Werk</a></li>
-				<li><a href="#"><span class="icon-rocket"></span>Projecten</a></li>
-				<li><a href="#"><span class="icon-menu"></span>Diensten</a></li>
-				<li><a href="#"><span class="icon-earth"></span>Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+			<li><strong>Honey Cappuccino</strong>
+                <p>Cappucino met honing</p></li>
+                <li><strong>Caramel Macchiato</strong>
+                <p>Latte met melkschuim & een vleugje caramel</p></li>
+                <li><strong>Vanilla Macchiato</strong>
+                <p>Latte met melkschuim & een vleugje vanille</p></li>
+                <li><strong>Cookie Macchiato</strong>
+                <p>Latte met melkschuim & een heerlijke toets speculoos.</p></li>
+                <li><strong>Nutty Macchiato</strong>
+                <p>Latte met melkschuim & een heerlijke toets geroosterde hazelnoot.</p></li>
+                <li><strong>Mocha</strong>
+                <p>Latte met toets chocolade.</p></li>
+                <li><strong>Soya Cappuccino / Soya Latte</strong>
+                <p>Bereid met Bio Sojamelk.</p></li>
+                <li><strong>Skinny Cappuccino / Skinny Latte</strong>
+                <p>Bereid met halfvolle biomelk.</p></li>
+            </ul>
+			</div>	
+		</div>
+
+		<div class="col-sm-4 col-md-3">
+				            <ul>
+                <h4>Broodjes</h4>
+                <h6 class="underline">Tot 16:00</h6>
+                <li><strong>Gouda</strong>
+                <p>Zonnepitstokbrood met jonge kaas, Sla, tomaat & dressing</p></li>
+                <li><strong>Geitenkaas</strong>
+                <p>Bio stokbrood met geitenkaas, appelschijfjes, honing sla</p></li>
+                <li><strong>Italiano</strong>
+                <p>Bio ciabatta met mozzarella, gedroogde tomaatjes & verse basilicum</p></li>
+                <li><strong>Normandie</strong>
+                <p>Noot-rozijnenfluitje met brie, honing en rucola</p></li>
+                <li><strong>Genovese</strong>
+                <p>Bio ciabatta met pesto, gegrilde groenten & parmesanschilfers</p></li>
+                <li><strong>Club</strong>
+                <p>Bio stokbrood met ham, kaas, mosterd, sla, tomaat & dressing</p></li>
+                <li><strong>Ganda</strong>
+                <p>Bio stokbrood met gedroogde ham, rucola, parmesanschilfers & olijfolie</p></li>
+                <li><strong>Provence</strong>
+                <p>Bio boterham met paprikatapenade en rauwkost, fris en gezond</p></li>
+                <li><strong>Norway</strong>
+                <p>Bio boterham met zalm, rucola & zure room</p></li>
+ 
+            </ul>	
+			
+		</div>
+		</div>
+		</div>	
+
+	</section>
+
+		<section id="contact" class="contact-section">
+		<div class="container-fluid">
+
+		<div class="col-sm-12">
+
+		</div>
+		</div>	
+
+	</section>
+
+		<section id="contact" class="contact-section">
+		<div class="container-fluid">
+
+		<div class="col-sm-12">
+			
+		</div>
+		</div>
+
+	</section>
+
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+
 </body>
 </html>
