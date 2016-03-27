@@ -15,8 +15,7 @@
 <!--	Navigatie	-->
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-
+<div class="nav-background">
 
   			<div class="top-nav visible-md visible-lg">
 			<div class="col-sm-3">
@@ -50,10 +49,11 @@
   </div>
 </nav>  
 
-     <header>
+     <header id="home">
         <!-- Indicators -->
-        
-        <div id="myCarousel" class="carousel slide hidden-xs">
+        <div class="container-fluid">
+
+        <div class="carousel slide hidden-xs">
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -76,15 +76,23 @@
         </div>
         </div>
 
+        <div class="header-xs visible-xs">
+            <img class="img-responsive center logo_full" src="img/logo_full.png">
+            <h4 class="text-box ">Welkom bij The Magic Bean! Een koffiebar met Italiaanse koffierecepten en met elke dag vers brood en koeken van de biobakkerij de Trog. Verder serveren wij homemade cakes, taarten en gezonder sandwiches, een uitgebreide keuze thee, verse fruitsapjes, smoothies en bio limonades.</h4>
+        </div>
+        </div>
         <!-- Controls -->
 
 
     </header> 
 
 	<section id="menu" class="menu-section">
-		<div class="container-fluid section-box">
-		
+		<div class="container-fluid">
+		      <div class="col-sm-offset-1 col-sm-10 col-xs-12 visible-md visible-lg">
+                <h3 class="text-box">Welkom bij The Magic Bean! Een koffiebar met Italiaanse koffierecepten en met elke dag vers brood en koeken van de biobakkerij de Trog. Verder serveren wij homemade cakes, taarten en gezonder sandwiches, een uitgebreide keuze thee, verse fruitsapjes, smoothies en bio limonades.</h3>
+        </div>  
 		<div class="col-sm-12">
+
 		<div class="col-sm-4 col-md-3">
 		            <ul>
                 
@@ -147,7 +155,7 @@
 
  
             </ul>	
-			<h3 class="visible-md visible-lg center underline">Welkom bij The Magic Bean! Een koffiebar met Italiaanse koffierecepten en met elke dag vers brood en koeken van de biobakkerij de Trog. Verder serveren wij homemade cakes, taarten en gezonder sandwiches, een uitgebreide keuze thee, verse fruitsapjes, smoothies en bio limonades.</h3>
+			
 
 			<!--
 
@@ -282,6 +290,8 @@
 	</section>
 
     <script src="js/jquery.js"></script>
+    <script src="js/jquery-scroll.js"></script>
+
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -293,14 +303,10 @@
     })
     </script>
 
-    <script type="text/javascript">
-    	
-  $(".flip").hover(function(){
-  $(this).find(".card").toggleClass("flipped");
-  return false;
-}	);
-    </script>
+    
+ 
 
+    
 
 </body>
 </html>
