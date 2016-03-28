@@ -14,26 +14,21 @@ body {
     background-color: #9f6b56;
 }
 
-.container-fluid {
-    padding: 52 0 0 0 ;
-    margin: 0;
-}
 
 @media only screen and (min-width: 991px) {
-.container-fluid {
-        padding-top: 109px;
-}
+
+    .home-section {
+    padding-top: 108px
+    }
+    .menu-section {
+    padding-top: 108px        
+    }
+    .contact-section {
+    padding-top: 108px        
+    }    
 
 }
-@media only screen and (min-width: 767px) {
-#googleMap {
-    height:200px;
-}
 
-h6 {
-
-    font-family: 'Roboto', sans-serif;
-}
 
 
 
@@ -42,16 +37,20 @@ nav {
 
     font-family: 'Roboto', sans-serif;
 }
-
+.logo-container {
+    z-index: 15;
+    min-height: 75px;
+    width: auto;
+    position: fixed;
+}
 .top-nav{
-
     height: 50px;
 
 }
 
 .nav-background {
     background-color: #1d1d25;
-    padding: 0;
+    padding: 0
     margin: 0;
 }
 
@@ -72,15 +71,12 @@ nav {
 }
 
 /* Header */
-.header-xs {
-    background-color: #1d1d25;
-    min-height: 100%;
-    padding-top: 50px;
 
-}
+.container-xs {
+    padding-top: 20;
+    padding-left: 10;
+    padding-right: 10;
 
-.logo_full {
-    padding-bottom: 20px;
 }
 
 .carousel,
@@ -110,16 +106,12 @@ nav {
 }
 
 
-/* Class verwijderen
-.underline {
-    border-bottom: 2px solid #1d1d25;
+
+h6.underline {
+    border-bottom: 2px solid white;
 }
 
-*/
 
-.text-box {
-    text-align: center;
-}
 
 strong {
 
@@ -135,57 +127,34 @@ ul, li {
     margin: 0;
 }
 
-a {
 
-    color: #00ffff;
-}
-
-a:hover {
-
-    color: #00ffff;
-    text-decoration: underline;
-}
-
-a:hover {
-
-    color: #00ffff;
-    text-decoration: underline;
-}
-
-a:visited {
-    color: #00ffff;
-}
 
 .center {
     text-align: center;
-    margin: auto;
 }
 
 .right {
     text-align: right;
 }
 
-.img-respnsive {
-    padding-bottom: 100px;
-
-
-}
-
-span.omschrijving {
-    border-bottom: 2px;
-    border-bottom-style: dotted;
-}
-
-
 section {
-    min-height: 100%;
-    padding-top: 35px; 
+    padding-top: 54px
+}
 
+.home-section{
+    background-color: #1d1d25;
+    height: 100%;
+}
+
+.menu-section {
+    min-height: 100%;
+    padding-bottom: 50px;
 
 }
 
 .contact-section {
     background-color: #1d1d25;
+    height: 100%
 }
 
 #googleMap {

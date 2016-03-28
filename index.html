@@ -12,19 +12,20 @@
 </head>
 
 <body>
+<div class="logo-container"><img src="img/logo_TheMagicBean_CMYK_Cream.svg"></div>
 <!--	Navigatie	-->
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
 <div class="nav-background">
 
   			<div class="top-nav visible-md visible-lg">
-			<div class="col-sm-3">
+            <div class="col-sm-6">
 			<h6>Hippoliet Lippensplein 72</h6>
 			<h6>Tel:  0032 09 12 34 56</h6>
 
 			</div>
-			<div class="col-sm-6 center"><img src="img/logo_TheMagicBean_CMYK_Cream.svg" style="height: 100%; width: auto; margin: auto;"></div>
-			<div class="col-sm-3 right">
+			
+			<div class="col-sm-6 right">
 			<h6>open ma-vr 8:00 tot 18:00</h6>
 			<h6>za-zo 9:30 tot 18:00</h6>
 			</div>
@@ -49,7 +50,7 @@
   </div>
 </nav>  
 
-     <header id="home">
+     <section id="home" class="home-section">
                 <div id="container-fluid">
                 <div id="myCarousel" class="carousel slide hidden-xs">
         <ol class="carousel-indicators">
@@ -73,30 +74,31 @@
 
         </div>
         </div>
-        <div class="header-xs visible-xs">
-           <img class="img-responsive center logo_full" src="img/logo_full.png">
-            <h4 class="text-box ">Welkom bij The Magic Bean! Een koffiebar met Italiaanse koffierecepten en met elke dag vers brood en koeken van de biobakkerij de Trog. Verder serveren wij homemade cakes, taarten en gezonder sandwiches, een uitgebreide keuze thee, verse fruitsapjes, smoothies en bio limonades.</h4>
+        <div class="container-xs visible-xs">
+           <img class="img-responsive center logo_full" src="img/logo_full.svg">
+            <h4 class="center">Welkom bij The Magic Bean! Een koffiebar met Italiaanse koffierecepten en met elke dag vers brood en koeken van de biobakkerij de Trog. Verder serveren wij homemade cakes, taarten en gezonder sandwiches, een uitgebreide keuze thee, verse fruitsapjes, smoothies en bio limonades.</h4>
         </div>
         </div>
 
 
 
-    </header> 
+    </section> 
 
 	<section id="menu" class="menu-section">
 		<div class="container-fluid">
-		      <div class="col-sm-offset-1 col-sm-10 col-xs-12 visible-md visible-lg">
-                <img class="img-responsive center logo_full" src="img/logowhite.png">
+		      <div class="col-sm-offset-1 col-sm-10 col-xs-12 visible-md visible-lg center">
 
-                <h3 class="text-box">Welkom bij The Magic Bean! Een koffiebar met Italiaanse koffierecepten en met elke dag vers brood en koeken van de biobakkerij de Trog. Verder serveren wij homemade cakes, taarten en gezonder sandwiches, een uitgebreide keuze thee, verse fruitsapjes, smoothies en bio limonades.</h3>
-        </div>  
+                <h3>Welkom bij The Magic Bean! Een koffiebar met Italiaanse koffierecepten en met elke dag vers brood en koeken van de biobakkerij de Trog. Verder serveren wij homemade cakes, taarten en gezonder sandwiches, een uitgebreide keuze thee, verse fruitsapjes, smoothies en bio limonades.</h3>
+            </div>  
 		<div class="col-sm-12">
 
 		<div class="col-sm-4 col-md-3">
+
+                <span class="title-menu"><h4>Lunch</h4>
+                <h6>Tot 16:00</h6></span>
 		            <ul>
                 
-                <h4>Lunch</h4>
-                <h6 class="underline">Tot 16:00</h6>
+  
                 <li><strong>Dagsoep met brood</strong></li>
                 <li><strong>Croque uit het vuistje</strong></li>
                 <li><strong>Croque monsieur</strong>
@@ -116,8 +118,10 @@
 
                 </div>
 		<div class="col-sm-4 col-md-6">
+                <div class="visible-xs visible-sm">
+                <span class="title-menu "><h4>Koffie</h4>
+                <h6>Doorlopend beschikbaar</h6></span>
 			<ul class="visible-xs visible-sm">		          
-                <h4>Koffie</h4>
                 <li><strong>Ristretto</strong>
                 <p>Kleine extra sterke koffie</p></li>
                 <li><strong>Espresso</strong>
@@ -154,12 +158,15 @@
 
  
             </ul>
-
+            </div>
 
 			
-			<h4 class="center visible-md visible-lg underline">Koffie</h4>
+            <span class="titel-menu center visible-md visible-lg">
+            <h4>Koffie</h4>
+            <h6>Doorlopend beschikbaar</h6>
+            </span>
 			<div class="col-sm-6 visible-md visible-lg">
-			
+
 			<ul>	
 			<li><strong>Ristretto</strong>
                 <p>Kleine extra sterke koffie</p></li>
@@ -205,9 +212,10 @@
 		</div>
 
 		<div class="col-sm-4 col-md-3">
+                <span class="titel-menu"><h4>Broodjes</h4>
+                <h6>Tot 16:00</h6></span>
 				            <ul>
-                <h4>Broodjes</h4>
-                <h6 class="underline">Tot 16:00</h6>
+
                 <li><strong>Gouda</strong>
                 <p>Zonnepitstokbrood met jonge kaas, Sla, tomaat & dressing</p></li>
                 <li><strong>Geitenkaas</strong>
@@ -278,13 +286,27 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
 
-    <!-- Script to Activate the Carousel -->
     <script>
+    // Script to Activate the Carousel
+
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
     
+    //jQuery for page scrolling feature - requires jQuery Easing plugin
+    $(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+        });
+    });
+
+    // Script for Google Maps Api
     function initialize() {
   var mapProp = {
     center:new google.maps.LatLng(51.508742,-0.120850),
@@ -294,6 +316,8 @@
   var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
 google.maps.event.addDomListener(window, 'load', initialize);
+
+
 
     </script>
 
